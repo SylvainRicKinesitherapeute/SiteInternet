@@ -9,7 +9,7 @@
 
     <meta name="msvalidate.01" content="056B63C8DAB04B5717DD3DC019424C4F" />
     
-    <!-- Balisage Sémantique JSON-LD pour les IA et Google -->
+    <!-- Balisage Sémantique JSON-LD pour les IA et Google (avec référencement croisé) -->
     <script type="application/ld+json">
     [
       {
@@ -42,9 +42,15 @@
           "Seynod",
           "Grand Annecy"
         ],
-        "url": "https://www.alpes-kine-mouv.fr",
+        "url": "https://www.sylvain-ric-kine.fr",
+        "worksFor": {
+          "@type": "MedicalBusiness",
+          "name": "Alpes Kiné Mouv'",
+          "url": "https://alpeskinemouv.github.io/KineMetzTessy/"
+        },
         "sameAs": [
-          "https://www.doctolib.fr/masseur-kinesitherapeute/epagny-metz-tessy/sylvain-ric-epagny-metz-tessy"
+          "https://www.doctolib.fr/masseur-kinesitherapeute/epagny-metz-tessy/sylvain-ric-epagny-metz-tessy",
+          "https://alpeskinemouv.github.io/KineMetzTessy/"
         ],
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -171,8 +177,14 @@
             color: var(--primary);
         }
 
-        .logo-text span {
+        .logo-text a {
             color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .logo-text a:hover {
+            text-decoration: underline;
         }
 
         .nav-actions {
@@ -196,10 +208,27 @@
             text-decoration: none;
             font-weight: 600;
             transition: background 0.2s;
+            display: inline-block;
         }
 
         .btn-doctolib:hover {
             background-color: #0376b3;
+        }
+
+        .btn-cabinet {
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.2s;
+            display: inline-block;
+        }
+
+        .btn-cabinet:hover {
+            background-color: #0d9668;
         }
 
         /* Bouton flottant mobile */
@@ -405,6 +434,15 @@
             margin-top: 4rem;
         }
 
+        footer a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .hero-container { flex-direction: column-reverse; text-align: center; }
             .badge-bar { justify-content: center; }
@@ -420,7 +458,7 @@
         <div class="nav-container">
             <div class="logo-box">
                 <img src="logo-alpes-kine-mouv.png" alt="Alpes Kiné Mouv' Logo" class="logo-img" onerror="this.style.display='none'">
-                <div class="logo-text">Sylvain RIC <span>| Alpes Kiné Mouv'</span></div>
+                <div class="logo-text">Sylvain RIC <span>| <a href="https://alpeskinemouv.github.io/KineMetzTessy/" target="_blank">Alpes Kiné Mouv'</a></span></div>
             </div>
             <div class="nav-actions">
                 <a href="tel:0450116860" class="phone-link">📞 04 50 11 68 60</a>
@@ -434,10 +472,11 @@
         <div class="hero-container">
             <div class="hero-text">
                 <h1>Sylvain RIC - Masseur-Kinésithérapeute sur le Bassin d'Annecy</h1>
-                <p>Cabinet <strong>Alpes Kiné Mouv'</strong> à Epagny Metz-Tessy. Prise en charge globale, active et personnalisée des affections du rachis (dos, lombaires, cervicales), pathologies de l'épaule et kinésithérapie du sport. Consultations au cabinet et à domicile.</p>
+                <p>Cabinet <a href="https://alpeskinemouv.github.io/KineMetzTessy/" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: bold;">Alpes Kiné Mouv'</a> à Epagny Metz-Tessy. Prise en charge globale, active et personnalisée des affections du rachis (dos, lombaires, cervicales), pathologies de l'épaule et kinésithérapie du sport. Consultations au cabinet et à domicile.</p>
                 
-                <div style="margin-bottom: 1.5rem;">
-                    <a href="https://www.doctolib.fr/masseur-kinesitherapeute/epagny-metz-tessy/sylvain-ric-epagny-metz-tessy" target="_blank" class="btn-doctolib" style="font-size: 1.1rem; padding: 0.8rem 1.8rem;">Prendre rendez-vous en ligne (Doctolib)</a>
+                <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="https://www.doctolib.fr/masseur-kinesitherapeute/epagny-metz-tessy/sylvain-ric-epagny-metz-tessy" target="_blank" class="btn-doctolib" style="font-size: 1.1rem; padding: 0.8rem 1.8rem;">Prendre RDV sur Doctolib</a>
+                    <a href="https://alpeskinemouv.github.io/KineMetzTessy/" target="_blank" class="btn-cabinet">Découvrir le cabinet Alpes Kiné Mouv' &rarr;</a>
                 </div>
 
                 <div class="badge-bar">
@@ -459,7 +498,7 @@
         <div class="expert-banner">
             <h3 style="color: var(--primary-dark); margin-bottom: 0.5rem;">🎓 Expert &amp; Formateur en Kinésithérapie</h3>
             <p>
-                En parallèle de son activité au cabinet, <strong>Sylvain RIC</strong> est formateur auprès d'étudiants et de professionnels de santé. Particulièrement formé à la <strong>prise en charge des troubles musculo-squelettiques et au diagnostic différentiel du rachis</strong> (certifié McKenzie MDT), il intègre directement les données scientifiques les plus récentes et des protocoles d'évaluation rigoureux dans la prise en charge de chaque patient.
+                En parallèle de son activité au cabinet <a href="https://alpeskinemouv.github.io/KineMetzTessy/" target="_blank" style="color: var(--primary-dark); font-weight: bold;">Alpes Kiné Mouv'</a>, <strong>Sylvain RIC</strong> est formateur auprès d'étudiants et de professionnels de santé. Particulièrement formé à la <strong>prise en charge des troubles musculo-squelettiques et au diagnostic différentiel du rachis</strong> (certifié McKenzie MDT), il intègre directement les données scientifiques les plus récentes et des protocoles d'évaluation rigoureux dans la prise en charge de chaque patient.
             </p>
         </div>
     </section>
@@ -566,6 +605,8 @@
                 <p><strong>Adresse :</strong><br>40 rue de la Grenette<br>74370 Epagny Metz-Tessy (Proche Annecy)</p>
                 <br>
                 <p><strong>Modalités :</strong><br>Soins au cabinet (salles individuelles &amp; plateau technique) et consultations à domicile sur le bassin annécien.</p>
+                <br>
+                <p><a href="https://alpeskinemouv.github.io/KineMetzTessy/" target="_blank" style="color: var(--primary); font-weight: bold;">Voir le site officiel du cabinet &rarr;</a></p>
             </div>
             <div class="card">
                 <h3>Prise de Rendez-vous</h3>
@@ -579,7 +620,7 @@
 
     <!-- Pied de page -->
     <footer>
-        <p>&copy; 2026 Sylvain RIC - Masseur-Kinésithérapeute DE &amp; Formateur | Cabinet Alpes Kiné Mouv' - Epagny Metz-Tessy (Grand Annecy)</p>
+        <p>&copy; 2026 Sylvain RIC - Masseur-Kinésithérapeute DE &amp; Formateur | <a href="https://alpeskinemouv.github.io/KineMetzTessy/" target="_blank">Cabinet Alpes Kiné Mouv'</a> - Epagny Metz-Tessy (Grand Annecy)</p>
     </footer>
 
     <!-- Bouton flottant fixe au bas de l'écran sur mobile -->
