@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sylvain RIC | Masseur-Kinésithérapeute, Enseignant &amp; Formateur</title>
-    <meta name="description" content="Site officiel de Sylvain RIC, Masseur-Kinésithérapeute co-fondateur du cabinet Alpes Kiné Mouv' à Epagny Metz-Tessy, Enseignant à l'Université Claude-Bernard Lyon 1 et Formateur.">
+    <title>Sylvain RIC | Masseur-Kinésithérapeute - Rachis, Épaule &amp; Sport à Epagny Metz-Tessy / Annecy</title>
+    <meta name="description" content="Site professionnel de Sylvain RIC, Masseur-Kinésithérapeute co-fondateur d'Alpes Kiné Mouv' à Epagny Metz-Tessy. Prise en charge individualisée fondée sur les preuves (EBP), Méthode McKenzie (MDT), pathologies du rachis, de l'épaule et réathlétisation.">
     
-    <!-- Indexation & Référencement -->
+    <!-- Indexation & SEO -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Balisage JSON-LD -->
+    <!-- Données Structurées JSON-LD pour SEO & Moteurs IA -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Sylvain RIC",
-      "jobTitle": "Masseur-Kinésithérapeute & Enseignant Universitial",
+      "jobTitle": "Masseur-Kinésithérapeute & Enseignant Universitaire",
       "worksFor": {
         "@type": "MedicalBusiness",
-        "name": "Alpes Kiné Mouv'"
+        "name": "Alpes Kiné Mouv'",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "40 Rue de la Grenette",
+          "addressLocality": "Epagny Metz-Tessy",
+          "postalCode": "74370",
+          "addressCountry": "FR"
+        }
       },
       "alumniOf": "Université Claude-Bernard Lyon 1",
-      "url": "https://www.sylvain-ric-kine.fr",
+      "url": "https://sylvainrickinesitherapeute.github.io/",
       "sameAs": "https://alpeskinemouv.github.io/KineMetzTessy/equipe/sylvain-ric.html"
     }
     </script>
@@ -53,7 +60,7 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        /* EN-TÊTE UNIFIÉ ET RESPONSIVE */
+        /* EN-TÊTE RESPONSIVE HARMONISÉ */
         header {
             display: flex;
             justify-content: space-between;
@@ -135,7 +142,7 @@
             transform: translateY(-2px);
         }
 
-        /* OPTIMISATION SPÉCIALE MOBILE */
+        /* MOBILE RESPONSIVE (SMARTPHONE) */
         @media (max-width: 768px) {
             header {
                 flex-direction: column !important;
@@ -172,7 +179,7 @@
             }
         }
 
-        /* BANNIÈRE HERO */
+        /* HERO PROFIL */
         .hero-profile {
             background: linear-gradient(135deg, rgba(27,73,101,0.95), rgba(0,168,107,0.85));
             color: var(--blanc);
@@ -196,10 +203,11 @@
         }
 
         .hero-profile h2 {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-weight: 400;
             opacity: 0.95;
-            margin-bottom: 25px;
+            max-width: 850px;
+            margin: 0 auto 25px;
         }
 
         .hero-buttons {
@@ -235,7 +243,7 @@
             text-align: center;
             color: var(--bleu-alpin);
             font-size: 2rem;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
         }
 
         .section-title::after {
@@ -273,6 +281,7 @@
             color: var(--bleu-alpin);
             margin-top: 0;
             margin-bottom: 15px;
+            font-size: 1.3rem;
         }
 
         .card-list {
@@ -293,6 +302,27 @@
             left: 0;
             color: var(--vert-mouvement);
             font-weight: bold;
+        }
+
+        /* ACCORDION FAQ EBP */
+        .faq-box {
+            background: var(--blanc);
+            border: 1px solid #EAEAEA;
+            border-radius: 12px;
+            padding: 22px 28px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        .faq-box h4 {
+            color: var(--bleu-alpin);
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .faq-box p {
+            font-size: 0.98rem;
+            color: var(--texte-sombre);
         }
 
         .cabinet-banner {
@@ -343,65 +373,91 @@
             <span class="brand-title">SYLVAIN RIC</span>
         </a>
         <nav>
-            <a href="#consultations">Soins &amp; Cabinet</a>
-            <a href="#enseignement">Enseignement</a>
-            <a href="#formations">Parcours &amp; Diplômes</a>
+            <a href="#approche">Mon Approche</a>
+            <a href="#expertises">Expertises</a>
+            <a href="#faq">FAQ &amp; Conseils</a>
             <a href="https://www.doctolib.fr/masseur-kinesitherapeute/epagny-metz-tessy/sylvain-ric-epagny-metz-tessy" class="btn-doctolib" target="_blank">Prendre RDV (Doctolib)</a>
         </nav>
     </header>
 
     <section class="hero-profile">
-        <img src="https://alpeskinemouv.github.io/KineMetzTessy/assets/sylvain-ric.jpg" alt="Sylvain RIC" class="profile-img-header" onerror="this.src='https://via.placeholder.com/140?text=Sylvain+RIC'">
+        <img src="https://alpeskinemouv.github.io/KineMetzTessy/assets/sylvain-ric.jpg" alt="Sylvain RIC - Masseur-Kinésithérapeute" class="profile-img-header" onerror="this.src='https://via.placeholder.com/140?text=Sylvain+RIC'">
         <h1>Sylvain RIC</h1>
-        <h2>Masseur-Kinésithérapeute • Enseignant Universitaire • Co-fondateur d'Alpes Kiné Mouv'</h2>
+        <h2>Masseur-Kinésithérapeute • Co-fondateur d'Alpes Kiné Mouv' à Epagny Metz-Tessy<br>Prise en charge scientifique, autonome et fondée sur les preuves (EBP)</h2>
         
         <div class="hero-buttons">
-            <a href="https://www.doctolib.fr/masseur-kinesitherapeute/epagny-metz-tessy/sylvain-ric-epagny-metz-tessy" class="btn-doctolib" target="_blank">Prendre RDV en Consultation</a>
-            <a href="https://alpeskinemouv.github.io/KineMetzTessy/" class="btn-secondary" target="_blank">Visiter le site du Cabinet &rarr;</a>
+            <a href="https://www.doctolib.fr/masseur-kinesitherapeute/epagny-metz-tessy/sylvain-ric-epagny-metz-tessy" class="btn-doctolib" target="_blank">Prendre RDV sur Doctolib</a>
+            <a href="https://alpeskinemouv.github.io/KineMetzTessy/" class="btn-secondary" target="_blank">Découvrir le Cabinet Alpes Kiné Mouv' &rarr;</a>
         </div>
     </section>
 
     <div class="container">
 
-        <h2 class="section-title" id="consultations">Domaines d'Activité &amp; Expertise</h2>
+        <!-- PHILOSOPHIE & APPROCHE EBP -->
+        <h2 class="section-title" id="approche">Une Philosophie de Soin Basée sur la Science</h2>
+        <p style="text-align: center; max-width: 900px; margin: 0 auto 40px; font-size: 1.1rem; line-height: 1.7;">
+            Ma pratique s'appuie sur la démarche <strong>Evidence-Based Practice (EBP)</strong>, qui combine les meilleures données scientifiques récentes, l'évaluation clinique individualisée et vos objectifs personnels. L'objectif est de vous redonner les clés du contrôle de votre santé grâce à la compréhension de votre problème et au mouvement actif.
+        </p>
 
         <div class="grid-3">
             <div class="card">
-                <h3>Kinésithérapie du Sport &amp; TMO</h3>
-                <p>Prise en charge spécialisée des pathologies musculo-squelettiques et traumatologies sportives :</p>
+                <h3>1. Bilan Mécanique &amp; Fonctionnel</h3>
+                <p>Analyse précise des mouvements, des contraintes et des directions préférentielles pour cibler l'évaluation sans se focaliser uniquement sur l'imagerie.</p>
+            </div>
+            <div class="card">
+                <h3>2. Explication &amp; Démystification</h3>
+                <p>Comprendre la nature des douleurs (rachis, tendon, nerf) pour éliminer les fausses croyances, réduire l'appréhension et adapter les activités quotidiennes.</p>
+            </div>
+            <div class="card">
+                <h3>3. Rééducation &amp; Autonomisation</h3>
+                <p>Programme d'exercices personnalisés et évolutifs sur le plateau technique pour consolider la récupération et prévenir durablement les récidives.</p>
+            </div>
+        </div>
+
+        <!-- DOMAINES D'EXPERTISE -->
+        <h2 class="section-title" id="expertises">Champs d'Expertise Spécifiques</h2>
+
+        <div class="grid-3">
+            <div class="card">
+                <h3>Pathologies du Rachis (McKenzie)</h3>
+                <p>Évaluation mécanique et rééducation active du dos et du cou (Méthode MDT) :</p>
                 <ul class="card-list" style="margin-top: 12px;">
-                    <li>Bilan fonctionnel du mouvement</li>
-                    <li>Pathologies de l'épaule et du membre supérieur</li>
-                    <li>Réathlétisation et retour au terrain</li>
+                    <li>Lombalgies aiguës et chroniques ("lumbago", mal de dos)</li>
+                    <li>Cervicalgies et torticolis</li>
+                    <li>Sciatiques, cruralgies &amp; névralgies cervico-brachiales</li>
+                    <li>Autonomisation par un exercice autotraitant ciblé</li>
                 </ul>
             </div>
 
             <div class="card">
-                <h3>Pathologies du Rachis (McKenzie)</h3>
-                <p>Évaluation mécanique et traitement personnalisé du dos et du cou (Méthode MDT) :</p>
+                <h3>Prise en Charge de l'Épaule</h3>
+                <p>Accompagnement spécifique des douleurs et raideurs complexes de l'épaule :</p>
                 <ul class="card-list" style="margin-top: 12px;">
-                    <li>Prise en charge des lombalgies &amp; cervicalgies</li>
-                    <li>Radiculopathies et névralgies</li>
-                    <li>Autonomisation du patient par l'exercice active</li>
+                    <li>Tendinopathies de la coiffe des rotateurs</li>
+                    <li>Bursites et conflits sous-acromiaux</li>
+                    <li>Épaules gelées (capsulites rétractiles)</li>
+                    <li>Instabilités et suites chirurgicales</li>
                 </ul>
             </div>
 
-            <div class="card" id="enseignement">
-                <h3>Enseignement &amp; Formation</h3>
-                <p>Transmission des connaissances biomécaniques et cliniques :</p>
+            <div class="card">
+                <h3>Kinésithérapie du Sport &amp; TMO</h3>
+                <p>Thérapie Manuelle Orthopédique et réathlétisation pour sportifs de tous niveaux :</p>
                 <ul class="card-list" style="margin-top: 12px;">
+                    <li>Entorses, lésions musculaires et tendineuses</li>
+                    <li>Analyse biomécanique et gestion de la charge</li>
+                    <li>Préparation au retour au terrain (Return-to-Play)</li>
                     <li>Enseignant à l'Université Claude-Bernard Lyon 1</li>
-                    <li>Biomécanique, diagnostic différentiel et jury d'oraux</li>
-                    <li>Formateur en réathlétisation et pathologies du rachis</li>
                 </ul>
             </div>
         </div>
 
+        <!-- BANNÈRE CABINET ALPES KINÉ MOUV' -->
         <div class="cabinet-banner">
             <div>
-                <h3>Cabinet Alpes Kiné Mouv'</h3>
-                <p>Retrouvez-moi au cabinet situé à Epagny Metz-Tessy pour des consultations individuelles en salle de soins et sur plateau technique équipé.</p>
-                <p style="margin-top: 8px; font-size: 0.95rem; color: #555;"><strong>Adresse :</strong> 40 Rue de la Grenette, 74370 Epagny Metz-Tessy</p>
+                <h3>Consultations au Cabinet Alpes Kiné Mouv'</h3>
+                <p>Les consultations ont lieu dans notre cabinet situé à Epagny Metz-Tessy, disposant de salles de soins individuelles (11 m²) et d'un grand plateau technique dédié au réentraînement actif.</p>
+                <p style="margin-top: 10px; font-size: 0.95rem; color: #555;">📍 <strong>Adresse :</strong> 40 Rue de la Grenette, 74370 Epagny Metz-Tessy (Bassin d'Annecy)</p>
             </div>
             <div style="text-align: center;">
                 <a href="https://www.doctolib.fr/masseur-kinesitherapeute/epagny-metz-tessy/sylvain-ric-epagny-metz-tessy" class="btn-doctolib" target="_blank" style="margin-bottom: 10px; width: 100%;">Prendre RDV (Doctolib)</a>
@@ -409,24 +465,44 @@
             </div>
         </div>
 
-        <h2 class="section-title" id="formations" style="margin-top: 60px;">Parcours &amp; Diplômes</h2>
+        <!-- FOIRE AUX QUESTIONS (FAQ EBP) -->
+        <h2 class="section-title" id="faq" style="margin-top: 60px;">Foire Aux Questions &amp; Compréhension du Soin</h2>
+
+        <div class="faq-box">
+            <h4>Qu'est-ce qu'une lombalgie et pourquoi faut-il rester actif ?</h4>
+            <p>La lombalgie ("mal de dos") est un phénomène fréquent et multifactoriel (influence des contraintes physiques, du niveau de fatigue, du stress ou de la posture). La recherche scientifique montre de manière très solide que le repos prolongé au lit est contre-productif. Le mouvement progressif et adapté est le moyen le plus efficace et le plus sûr de restaurer la mobilité et de soulager le dos.</p>
+        </div>
+
+        <div class="faq-box">
+            <h4>Qu'est-ce que la Méthode McKenzie (MDT) ?</h4>
+            <p>C'est un système d'évaluation et de prise en charge reconnu au niveau international pour le dos, le cou et les membres. À travers une série de mouvements répétitionnels testés lors du bilan, le praticien cherche si une "direction préférentielle" permet de centraliser et diminuer les douleurs. Un exercice simple vous est ensuite enseigné à réaliser en toute autonomie chez vous.</p>
+        </div>
+
+        <div class="faq-box">
+            <h4>Faut-il impérativement une IRM ou une radiographie avant de venir en consultation ?</h4>
+            <p>Non, sauf en cas de signes d'alerte spécifiques évalués par votre médecin. Les études scientifiques montrent que de nombreuses anomalies observées sur les IRM (comme le vieillissement naturel d'un disque ou une petite protrusion) sont présentes chez des personnes en bonne santé sans aucune douleur. Le bilan de kinésithérapie se focalise avant tout sur la fonction, votre mouvement et vos symptômes réels.</p>
+        </div>
+
+        <!-- FORMATIONS & PARCOURS -->
+        <h2 class="section-title" style="margin-top: 60px;">Formations Continues &amp; Titres</h2>
 
         <div class="card" style="border-left-color: var(--vert-mouvement);">
-            <h3>Formations Continues &amp; Diplômes</h3>
+            <h3>Diplômes &amp; Qualifications Spécifiques</h3>
             <ul class="card-list">
-                <li><strong>2014 :</strong> Diplôme d'État de Masseur-Kinésithérapeute (IFMKNF)</li>
-                <li><strong>2021 :</strong> Spécialisation en Kinésithérapie du Sport (SSK Formation)</li>
-                <li><strong>2022-2023 :</strong> Certifié Méthode McKenzie (MDT - Parties A, B, C, D et Certification)</li>
-                <li><strong>2024 :</strong> La Clinique du Coureur 1.0</li>
-                <li><strong>Thérapie Manuelle Orthopédique :</strong> Système canadien (K'pten) &amp; Rachis lombaire</li>
+                <li><strong>Diplôme d'État de Masseur-Kinésithérapeute</strong> (IFMKNF)</li>
+                <li><strong>Méthode McKenzie (MDT) :</strong> Diagnostic et Thérapie Mécanique du Rachis (Parties A, B, C, D)</li>
+                <li><strong>Kinésithérapie du Sport &amp; Réathlétisation :</strong> Prise en charge des lésions musculo-squelettiques (SSK)</li>
+                <li><strong>La Clinique du Coureur :</strong> Nouveautés dans la prévention et le traitement des blessures en course à pied</li>
+                <li><strong>Thérapie Manuelle Orthopédique (TMO) :</strong> Système canadien (K'pten) &amp; Rachis lombaire</li>
+                <li><strong>Chargé d'Enseignement :</strong> Université Claude-Bernard Lyon 1 (IFMK)</li>
             </ul>
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Sylvain RIC — Masseur-Kinésithérapeute &amp; Enseignant</p>
-        <p style="margin-top: 10px;"><a href="https://alpeskinemouv.github.io/KineMetzTessy/">Alpes Kiné Mouv' — Epagny Metz-Tessy</a></p>
+        <p>&copy; 2026 Sylvain RIC — Masseur-Kinésithérapeute • Co-fondateur Alpes Kiné Mouv'</p>
+        <p style="margin-top: 10px;"><a href="https://alpeskinemouv.github.io/KineMetzTessy/">Accéder au site officiel du cabinet Alpes Kiné Mouv'</a></p>
     </footer>
 
 </body>
