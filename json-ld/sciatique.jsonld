@@ -1,0 +1,36 @@
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/sciatique/#webpage",
+      "url":"https://sylvainrickinesitherapeute.github.io/SiteInternet/sciatique/",
+      "name":"Sciatique | Kinésithérapeute à Annecy — Sylvain RIC",
+      "description":"Sciatique et douleur dans la jambe : kinésithérapie à Epagny Metz-Tessy près d'Annecy. Évaluation des symptômes, approche active, McKenzie/MDT et exercices adaptés.",
+      "isPartOf":{"@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#website"},
+      "about":{"@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#person"}
+    },
+    {
+      "@type":"BreadcrumbList",
+      "@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/sciatique/#breadcrumb",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Accueil","item":"https://sylvainrickinesitherapeute.github.io/SiteInternet/"},
+        {"@type":"ListItem","position":2,"name":"Sciatique","item":"https://sylvainrickinesitherapeute.github.io/SiteInternet/sciatique/"}
+      ]
+    },
+    {
+      "@type":"Person",
+      "@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#person",
+      "name":"Sylvain RIC",
+      "jobTitle":"Masseur-Kinésithérapeute",
+      "url":"https://sylvainrickinesitherapeute.github.io/SiteInternet/",
+      "sameAs":["https://alpeskinemouv.github.io/KineMetzTessy/equipe/sylvain-ric.html"]
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#website",
+      "url":"https://sylvainrickinesitherapeute.github.io/SiteInternet/",
+      "name":"Sylvain RIC — Masseur-Kinésithérapeute"
+    }
+  ]
+}

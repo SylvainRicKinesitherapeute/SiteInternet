@@ -1,0 +1,36 @@
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"ProfilePage",
+      "@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#profile",
+      "url":"https://sylvainrickinesitherapeute.github.io/SiteInternet/",
+      "name":"Sylvain RIC — Masseur-Kinésithérapeute à Epagny Metz-Tessy",
+      "mainEntity":{"@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#person"}
+    },
+    {
+      "@type":"Person",
+      "@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#person",
+      "name":"Sylvain RIC",
+      "jobTitle":"Masseur-Kinésithérapeute",
+      "url":"https://sylvainrickinesitherapeute.github.io/SiteInternet/",
+      "image":"https://sylvainrickinesitherapeute.github.io/SiteInternet/sylvain-ric.jpg",
+      "worksFor":{"@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#practice"},
+      "alumniOf":{"@type":"CollegeOrUniversity","name":"Université Claude-Bernard Lyon 1"},
+      "sameAs":["https://alpeskinemouv.github.io/KineMetzTessy/equipe/sylvain-ric.html"]
+    },
+    {
+      "@type":"LocalBusiness",
+      "@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#practice",
+      "name":"Alpes Kiné Mouv'",
+      "url":"https://alpeskinemouv.github.io/KineMetzTessy/",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"40 Rue de la Grenette",
+        "addressLocality":"Epagny Metz-Tessy",
+        "postalCode":"74370",
+        "addressCountry":"FR"
+      }
+    }
+  ]
+}
