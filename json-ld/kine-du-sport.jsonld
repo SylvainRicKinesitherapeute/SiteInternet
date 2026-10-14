@@ -1,0 +1,102 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://sylvainrickinesitherapeute.github.io/SiteInternet/kine-du-sport/#webpage",
+      "url": "https://sylvainrickinesitherapeute.github.io/SiteInternet/kine-du-sport/",
+      "name": "Kinésithérapie du Sport & Prise en Charge du Sportif | Kiné Annecy — Sylvain RIC",
+      "description": "Prise en charge active des blessures sportives à Epagny Metz-Tessy (Annecy) : entorses, tendinites, tendinopathies, ruptures du LCA, lésions musculaires, fractures, soins post-opératoires et réathlétisation.",
+      "isPartOf": {
+        "@id": "https://sylvainrickinesitherapeute.github.io/SiteInternet/#website"
+      },
+      "about": {
+        "@id": "https://sylvainrickinesitherapeute.github.io/SiteInternet/#person"
+      },
+      "medicalAudience": "SportsMedicine"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sylvainrickinesitherapeute.github.io/SiteInternet/kine-du-sport/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://sylvainrickinesitherapeute.github.io/SiteInternet/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Kiné du sport",
+          "item": "https://sylvainrickinesitherapeute.github.io/SiteInternet/kine-du-sport/"
+        }
+      ]
+    },
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://sylvainrickinesitherapeute.github.io/SiteInternet/#clinic",
+      "name": "Alpes Kiné Mouv' — Sylvain RIC",
+      "url": "https://sylvainrickinesitherapeute.github.io/SiteInternet/",
+      "telephone": "+33450000000",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Rue de la Grenette",
+        "addressLocality": "Epagny Metz-Tessy",
+        "postalCode": "74370",
+        "addressRegion": "Haute-Savoie",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.9262,
+        "longitude": 6.0967
+      },
+      "medicalSpecialty": [
+        "SportsMedicine",
+        "Physiotherapy",
+        "Musculoskeletal"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sylvainrickinesitherapeute.github.io/SiteInternet/kine-du-sport/#service",
+      "name": "Kinésithérapie du Sport, Rééducation Traumatologique & Réathlétisation",
+      "serviceType": "Kinésithérapie du sport",
+      "provider": {
+        "@type": "Person",
+        "name": "Sylvain RIC",
+        "jobTitle": "Masseur-Kinésithérapeute",
+        "url": "https://sylvainrickinesitherapeute.github.io/SiteInternet/"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Annecy"
+        },
+        {
+          "@type": "City",
+          "name": "Epagny Metz-Tessy"
+        }
+      ],
+      "description": "Prise en charge spécialisée et active des pathologies et traumatismes du sportif : bilans diagnostics, rééducation basée sur les preuves scientifiques (EBP), gestion de la charge d'entraînement et protocole de retour au terrain.",
+      "knowsAbout": [
+        "Kinésithérapie du sport",
+        "Réathlétisation et Return to Play (RTP)",
+        "Gestion de la charge d'entraînement",
+        "Mécanotransduction",
+        "Tendinopathies et tendinites (Achille, rotulien, moyen fessier, épicondylite)",
+        "Protocole High-load Slow Resistance (HSR)",
+        "Entorses et entorse de cheville",
+        "Rupture et rééducation du Ligament Croisé Antérieur (LCA)",
+        "Lésions musculaires, élongations, claquages, déchirures musculaires et courbatures",
+        "Fractures, fêlures et rééducation post-immobilisation",
+        "Suivi post-opératoire et chirurgie orthopédique du sportif",
+        "Luxations, subluxations et instabilités articulaires (épaule, rotule)",
+        "Syndrome essuie-glace (TFL) et périostites tibiales",
+        "Prévention des récidives chez le sportif"
+      ]
+    }
+  ]
+}

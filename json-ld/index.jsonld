@@ -1,36 +1,81 @@
 {
-  "@context":"https://schema.org",
-  "@graph":[
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@type":"ProfilePage",
-      "@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#profile",
-      "url":"https://sylvainrickinesitherapeute.github.io/SiteInternet/",
-      "name":"Sylvain RIC — Masseur-Kinésithérapeute à Epagny Metz-Tessy",
-      "mainEntity":{"@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#person"}
+      "@type": "ProfilePage",
+      "@id": "https://sylvainrickinesitherapeute.github.io/SiteInternet/#profile",
+      "url": "https://sylvainrickinesitherapeute.github.io/SiteInternet/",
+      "name": "Sylvain RIC — Masseur-Kinésithérapeute à Epagny Metz-Tessy (Annecy)",
+      "mainEntity": {"@id": "https://sylvainrickinesitherapeute.github.io/SiteInternet/#person"}
     },
     {
-      "@type":"Person",
-      "@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#person",
-      "name":"Sylvain RIC",
-      "jobTitle":"Masseur-Kinésithérapeute",
-      "url":"https://sylvainrickinesitherapeute.github.io/SiteInternet/",
-      "image":"https://sylvainrickinesitherapeute.github.io/SiteInternet/sylvain-ric.jpg",
-      "worksFor":{"@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#practice"},
-      "alumniOf":{"@type":"CollegeOrUniversity","name":"Université Claude-Bernard Lyon 1"},
-      "sameAs":["https://alpeskinemouv.github.io/KineMetzTessy/equipe/sylvain-ric.html"]
+      "@type": "Person",
+      "@id": "https://sylvainrickinesitherapeute.github.io/SiteInternet/#person",
+      "name": "Sylvain RIC",
+      "jobTitle": "Masseur-Kinésithérapeute",
+      "url": "https://sylvainrickinesitherapeute.github.io/SiteInternet/",
+      "image": "https://sylvainrickinesitherapeute.github.io/SiteInternet/sylvain-ric.jpg",
+      "worksFor": {"@id": "https://sylvainrickinesitherapeute.github.io/SiteInternet/#practice"},
+      "alumniOf": {"@type": "CollegeOrUniversity", "name": "Université Claude-Bernard Lyon 1"},
+      "sameAs": ["https://alpeskinemouv.github.io/KineMetzTessy/equipe/sylvain-ric.html"],
+      "knowsAbout": [
+        "Méthode McKenzie (MDT)",
+        "Kinésithérapie du sport et réathlétisation",
+        "Pathologies du rachis, du dos, des lombaires et des cervicales",
+        "Sciatique, cruralgie et hernie discale",
+        "Névralgie cervico-brachiale (NCB)",
+        "Tendinites et tendinopathies (HSR)",
+        "Entorses et traumatismes articulaires",
+        "Ligament croisé antérieur (LCA) et chirurgies du genou",
+        "Lésions musculaires, claquages, déchirures et luxations"
+      ]
     },
     {
-      "@type":"LocalBusiness",
-      "@id":"https://sylvainrickinesitherapeute.github.io/SiteInternet/#practice",
-      "name":"Alpes Kiné Mouv'",
-      "url":"https://alpeskinemouv.github.io/KineMetzTessy/",
-      "address":{
-        "@type":"PostalAddress",
-        "streetAddress":"40 Rue de la Grenette",
-        "addressLocality":"Epagny Metz-Tessy",
-        "postalCode":"74370",
-        "addressCountry":"FR"
-      }
+      "@type": ["LocalBusiness", "MedicalBusiness"],
+      "@id": "https://sylvainrickinesitherapeute.github.io/SiteInternet/#practice",
+      "name": "Alpes Kiné Mouv'",
+      "url": "https://alpeskinemouv.github.io/KineMetzTessy/",
+      "image": "https://sylvainrickinesitherapeute.github.io/SiteInternet/logo.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Rue de la Grenette",
+        "addressLocality": "Epagny Metz-Tessy",
+        "postalCode": "74370",
+        "addressRegion": "Haute-Savoie",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.9262,
+        "longitude": 6.0967
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Annecy"},
+        {"@type": "City", "name": "Epagny Metz-Tessy"}
+      ],
+      "medicalSpecialty": [
+        "PhysicalTherapy",
+        "Musculoskeletal",
+        "SportsMedicine"
+      ],
+      "availableService": [
+        {
+          "@type": "MedicalProcedure",
+          "name": "Kinésithérapie du sport, traumatologie et réathlétisation"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Traitement mécanique du rachis (Méthode McKenzie)"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Prise en charge de la lombalgie, sciatique et névralgie cervico-brachiale"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Rééducation des tendinopathies, entorses et lésions musculaires"
+        }
+      ]
     }
   ]
 }
